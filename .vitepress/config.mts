@@ -13,15 +13,14 @@ export default defineConfig({
     outline: {
       label: '文章目录',
     },
-    lastUpdated: {
-      text: '更新时间',
-    },
     nav: [
       { text: '首页', link: '/' },
       { text: '基础', link: '/basic/' },
       { text: '框架', link: '/framework/' },
       { text: '工程', link: '/project/' },
-      { text: '部署', link: '/deploy' },
+      { text: '服务', link: '/service/node' },
+      { text: '部署', link: '/deploy/' },
+      { text: '网络', link: '/network/' },
       { text: '案例', link: '/case/' },
       { text: '试题', link: '/faq/' },
       { text: '其他', link: '/other/' },
@@ -37,17 +36,28 @@ export default defineConfig({
         { text: '数据结构', link: '/' },
       ],
 
-      '/framework/': [
-        { text: 'Vue', link: '/framework/vue/' },
-        { text: 'React', link: '/framework/react/' },
+      '/framework': [
+        {
+          text: 'Vue',
+          items: []
+        },
+        {
+          text: 'React',
+          items: []
+        },
       ],
 
       '/project/': [
         {
+          text: '包管理',
+          items: [
+            { text: 'npm', link: '/project/pkg/npm' },
+          ]
+        },
+        {
           text: '版本管理',
           items: [
-            { text: 'Git', link: '/project/git/' },
-            { text: 'Git Hooks', link: '/project/eslint/' },
+            { text: 'Git', link: '/project/ver/git' },
           ]
         },
         {
@@ -74,7 +84,6 @@ export default defineConfig({
         }
       ],
 
-
       '/case/': [
         { text: '手写', link: '/case/handwrite/' },
         { text: '布局', link: '/case/layout/' },
@@ -84,6 +93,7 @@ export default defineConfig({
         { text: '文件上传', 'link': '/case/fileUpload/' },
         { text: '自定义布局', 'link': '/case/customLayout/' },
         { text: '组件源码展示', 'link': '/case/component/' },
+        { text: '自定义脚手架', 'link': '/case/cli/' },
       ],
 
       '/faq/': [
@@ -91,9 +101,32 @@ export default defineConfig({
         { text: 'Javascript', link: '/faq/js' },
       ],
 
+      '/service': [
+        {
+          text: 'Node',
+          items: [
+            { text: '架构设计', link: '/service/node/index' },
+            { text: '模块规范', link: '/service/node/standard' },
+            { text: '全局变量', link: '/service/node/global' },
+            { text: '内置模块', link: '/service/node/module' },
+            { text: '外置工具', link: '/service/node/util' },
+          ]
+        },
+      ],
+
       '/deploy': [
         { text: 'Nginx', link: '/deploy/nginx' },
         { text: 'Docker', link: '/deploy/docker' },
+      ],
+
+      '/network':[
+        { text: '子网划分', link: '/network/subnet' },
+        { text: '浏览器缓存', link: '/network/cache' },
+      ],
+
+      '/other':[
+        { text: '设计模式', link: '/other/design' },
+        { text: '软硬连接', link: '/other/link' },
       ]
     },
 
