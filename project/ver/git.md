@@ -434,7 +434,7 @@ s:版本2
 # 本地仓库关联远程仓库
 remote add origin url 
 # 本地仓库取消关联远程仓库
-remote remove origin ur
+remote remove origin
 ```
 
 

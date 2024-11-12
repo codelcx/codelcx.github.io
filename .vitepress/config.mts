@@ -11,7 +11,8 @@ export default defineConfig({
       provider: 'local',
     },
     outline: {
-      label: '文章目录',
+      label: '页面导航',
+      level: [2,3],
     },
     nav: [
       { text: '首页', link: '/' },
@@ -33,7 +34,7 @@ export default defineConfig({
         { text: '函数', link: '/' },
         { text: '代理', link: '/' },
         { text: '异步', link: '/' },
-        { text: '数据结构', link: '/' },
+        { text: 'SetMAP', link: '/' },
       ],
 
       '/framework': [
@@ -125,7 +126,7 @@ export default defineConfig({
       ],
 
       '/other':[
-        { text: '设计模式', link: '/other/design' },
+        { text: '设计模式', link: '/other/designMode' },
         { text: '软硬连接', link: '/other/link' },
       ]
     },
