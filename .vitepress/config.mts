@@ -18,13 +18,13 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '基础', link: '/basic/' },
       { text: '框架', link: '/framework/' },
-      { text: '工程', link: '/project/' },
-      { text: '服务', link: '/service/node' },
+      { text: '工程', link: '/project/pkg/npm' },
+      { text: '服务', link: '/service/node/standard' },
       { text: '部署', link: '/deploy/' },
-      { text: '网络', link: '/network/' },
+      { text: '网络', link: '/network/subnet' },
       { text: '案例', link: '/case/' },
       { text: '试题', link: '/faq/' },
-      { text: '其他', link: '/other/' },
+      { text: '其他', link: '/other/designMode' },
     ],
 
     sidebar: {
@@ -34,7 +34,7 @@ export default defineConfig({
         { text: '函数', link: '/' },
         { text: '代理', link: '/' },
         { text: '异步', link: '/' },
-        { text: 'SetMAP', link: '/' },
+        { text: 'SetMap', link: '/' },
       ],
 
       '/framework': [
@@ -79,8 +79,8 @@ export default defineConfig({
         {
           text: '预处理',
           items: [
-            { text: 'Sass', link: '/project/sass/' },
-            { text: 'Typescript', link: '/project/typescript/' },
+            // { text: 'Sass', link: '/project/sass/' },
+            { text: 'Typescript', link: '/project/pre/ts' },
           ]
         }
       ],

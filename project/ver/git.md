@@ -1,8 +1,8 @@
 ## 本地配置
 
-全局配置文件：`C:\Users\[userName]\.gitconfig`
-
 项目配置文件：`root/.gitconfig`
+
+全局配置文件：`C:\Users\[userName]\.gitconfig`
 
 ```sh
 # --global(全局) --local(本地)
