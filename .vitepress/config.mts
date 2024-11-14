@@ -20,7 +20,7 @@ export default defineConfig({
       { text: '框架', link: '/framework/' },
       { text: '工程', link: '/project/pkg/npm' },
       { text: '服务', link: '/service/node/standard' },
-      { text: '部署', link: '/deploy/' },
+      { text: '部署', link: '/deploy/nginx' },
       { text: '网络', link: '/network/subnet' },
       { text: '案例', link: '/case/' },
       { text: '试题', link: '/faq/' },
