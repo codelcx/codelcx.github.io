@@ -2,6 +2,30 @@
 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
 
+
+
+## 数组解构
+
+```js
+const arr = [1, [2], 3, 4]
+const [a,[b]] = arr
+
+// 默认
+const [a, b] = arr // a:1, b:2
+// 忽略
+const [, , c] = arr // c: 3
+// 剩余
+const [d, ...rest] = arr // d:1, rest: [2, 3, 4]
+// 多余
+const [, , , , e] = arr // e: undefined
+// 默认值
+const [, , , , f = 100] = arr // f:100
+```
+
+
+
+
+
 ## 静态方法
 
 ### Array.of
@@ -245,27 +269,4 @@ arr.slice(1, 3) // [2, 3]
 ```js
 [1, 2, 3, 4].reduce((pre, cur) => pre + cur, 0) // 10
 ```
-
-
-
-## 数组解构
-
-```js
-const arr = [1, [2], 3, 4]
-const [a,[b]] = arr
-
-// 默认
-const [a, b] = arr // a:1, b:2
-// 忽略
-const [, , c] = arr // c: 3
-// 剩余
-const [d, ...rest] = arr // d:1, rest: [2, 3, 4]
-// 多余
-const [, , , , e] = arr // e: undefined
-// 默认值
-const [, , , , f = 100] = arr // f:100
-
-```
-
-
 

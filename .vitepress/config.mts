@@ -30,10 +30,9 @@ export default defineConfig({
     sidebar: {
       '/basic/': [
         { text: '数组', link: '/basic/array' },
-        { text: '对象', link: '/' },
+        { text: '对象', link: '/basic/object' },
         { text: '集合', link: '/' },
         { text: '函数', link: '/' },
-        { text: '代理', link: '/' },
         { text: '异步', link: '/' },
       ],
 
