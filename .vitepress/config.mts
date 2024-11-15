@@ -16,7 +16,7 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '基础', link: '/basic/' },
+      { text: '基础', link: '/basic/array' },
       { text: '框架', link: '/framework/' },
       { text: '工程', link: '/project/pkg/npm' },
       { text: '服务', link: '/service/node/standard' },
@@ -29,12 +29,12 @@ export default defineConfig({
 
     sidebar: {
       '/basic/': [
-        { text: '数组', link: '/' },
+        { text: '数组', link: '/basic/array' },
         { text: '对象', link: '/' },
+        { text: '集合', link: '/' },
         { text: '函数', link: '/' },
         { text: '代理', link: '/' },
         { text: '异步', link: '/' },
-        { text: 'SetMap', link: '/' },
       ],
 
       '/framework': [
