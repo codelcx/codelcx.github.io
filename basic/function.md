@@ -105,10 +105,10 @@ function fun(argument) {
 const fn = new fun(2)
 ```
 
-5、this忽略：null.undefined`作为this传入`call,apply，bind`时该值会被忽略，应用默认绑定
+5、this忽略：`null.undefined`作为this传入`call,apply，bind`时该值会被忽略，应用默认绑定
 
 ```javascript
-//为了安全起见,不影响全局对象，不使用null而是 使用特殊对象DMZ空对象
+// 为了安全起见,不影响全局对象，不使用null而是 使用特殊对象DMZ空对象
 const obj = Object.create(null)
 fun.apply(obj,[2,3])
 ```

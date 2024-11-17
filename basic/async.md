@@ -8,7 +8,8 @@
 
 ```js
 async function fn() {}
-const fn = async () => {}
+const fn = function() {}
+const fn = () => {}
 ```
 
 返回值：promise

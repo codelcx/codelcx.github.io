@@ -16,7 +16,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 
 ## 代理
 
-它允许你定义一个对象的基本操作的自定义行为（如属性查找、赋值、枚举、函数调用等）。代理对象是目标对象的透明代理，可以拦截和自定义这些基本操作。
+它允许你定义一个对象的基本操作的自定义行为（如属性查找、赋值、枚举、函数调用等）
 
 基本语法
 
