@@ -32,8 +32,8 @@ export default defineConfig({
         { text: '数组', link: '/basic/array' },
         { text: '对象', link: '/basic/object' },
         { text: '集合', link: '/' },
-        { text: '函数', link: '/' },
-        { text: '异步', link: '/' },
+        { text: '函数', link: '/basic/function' },
+        { text: '异步', link: '/basic/async' },
       ],
 
       '/framework': [

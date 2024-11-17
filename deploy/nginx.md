@@ -1,3 +1,7 @@
+# NGINX
+
+
+
 ## 前期准备
 
 软件：Vmware
@@ -1798,5 +1802,4 @@ main、http、server、location
 rpm -ql logrotate # 查看是否已安装，默认是存在的
 yum install -y logrotate
 ```
-
 
