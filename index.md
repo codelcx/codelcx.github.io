@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Fast learning
-      link: /markdown-examples
+      link: /basic/array
     - theme: alt
       text: Github
       link: https://github.com/codelcx
