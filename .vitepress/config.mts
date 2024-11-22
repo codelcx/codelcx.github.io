@@ -22,7 +22,7 @@ export default defineConfig({
       { text: '服务', link: '/service/node' },
       { text: '部署', link: '/deploy/nginx/env' },
       { text: '网络', link: '/network/subnet' },
-      { text: '案例', link: '/case/' },
+      { text: '案例', link: '/case/tool' },
       { text: '试题', link: '/faq/' },
       { text: '其他', link: '/other/designMode' },
     ],
@@ -85,8 +85,7 @@ export default defineConfig({
       ],
 
       '/case/': [
-        { text: '手写', link: '/case/handwrite/' },
-        { text: '布局', link: '/case/layout/' },
+        { text: '工具函数', link: '/case/tool/' },
         { text: '瀑布流', link: '/case/waterfall/' },
         { text: '轮播图', 'link': '/case/carousel/' },
         { text: '虚拟列表', 'link': '/case/virtualList/' },
