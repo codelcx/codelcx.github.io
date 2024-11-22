@@ -20,7 +20,7 @@ export default defineConfig({
       { text: '框架', link: '/framework/' },
       { text: '工程', link: '/project/pkg/npm' },
       { text: '服务', link: '/service/node' },
-      { text: '部署', link: '/deploy/nginx' },
+      { text: '部署', link: '/deploy/nginx/env' },
       { text: '网络', link: '/network/subnet' },
       { text: '案例', link: '/case/' },
       { text: '试题', link: '/faq/' },
@@ -70,9 +70,9 @@ export default defineConfig({
         {
           text: '构建工具',
           items: [
-            { text: 'Babel', link: '/project/babel/' },
+            // { text: 'Babel', link: '/project/babel/' },
             { text: 'Vite', link: '/project/vite/' },
-            { text: 'Webpack', link: '/project/webpack/' },
+            // { text: 'Webpack', link: '/project/webpack/' },
           ]
         },
         {
@@ -115,8 +115,20 @@ export default defineConfig({
       ],
 
       '/deploy': [
-        { text: 'Nginx', link: '/deploy/nginx' },
-        { text: 'Docker', link: '/deploy/docker' },
+        { text: 'Nginx', 
+          items:[
+            { text: '环境准备', link: '/deploy/nginx/env' },
+            { text: '配置指令', link: '/deploy/nginx/config' },
+            { text: '静态资源', link: '/deploy/nginx/static' },
+            { text: '代理服务', link: '/deploy/nginx/proxy' },
+            { text: '负载均衡', link: '/deploy/nginx/loadBalance' },
+            { text: '安全控制', link: '/deploy/nginx/ssl' },
+            { text: '缓存服务', link: '/deploy/nginx/cache' },
+            { text: '日志管理', link: '/deploy/nginx/log' },
+            { text: '性能优化', link: '/deploy/nginx/optimization' },
+          ]
+         },
+        // { text: 'Docker', link: '/deploy/docker' },
       ],
 
       '/network':[
