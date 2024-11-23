@@ -87,7 +87,7 @@ export default defineConfig({
       '/case/': [
         { text: '工具函数', link: '/case/tool/' },
         { text: '瀑布流', link: '/case/waterfall/' },
-        { text: '轮播图', 'link': '/case/carousel/' },
+        { text: '轮播图', 'link': '/case/swiper/' },
         { text: '虚拟列表', 'link': '/case/virtualList/' },
         { text: '文件上传', 'link': '/case/fileUpload/' },
         { text: '自定义布局', 'link': '/case/customLayout/' },

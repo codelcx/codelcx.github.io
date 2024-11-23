@@ -98,7 +98,7 @@ fn.apply(obj2,[2,5])
 
 ```js
 function fun(argument) {
-	this.a=argument
+  this.a= argument
   console.log(this) // 指向fun
 }
 
