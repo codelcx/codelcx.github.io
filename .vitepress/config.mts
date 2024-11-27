@@ -12,7 +12,7 @@ export default defineConfig({
     },
     outline: {
       label: '页面导航',
-      level: [2,3],
+      level: [2, 3],
     },
     nav: [
       { text: '首页', link: '/' },
@@ -87,11 +87,11 @@ export default defineConfig({
       '/case/': [
         { text: '工具函数', link: '/case/tool/' },
         // { text: '瀑布流', link: '/case/waterfall/' },
-        { text: '轮播图', 'link': '/case/swiper' },
+        { text: '无缝轮播', 'link': '/case/swiper' },
         // { text: '虚拟列表', 'link': '/case/virtualList/' },
         { text: '防删水印', 'link': '/case/watermark' },
-        { text: '文件上传', 'link': '/case/fileUpload/' },
-        { text: '自定义布局', 'link': '/case/customLayout/' },
+        { text: '文件上传', 'link': '/case/upload' },
+        // { text: '自定义布局', 'link': '/case/customLayout/' },
         { text: '组件源码展示', 'link': '/case/component/' },
         { text: '自定义脚手架', 'link': '/case/cli/' },
       ],
@@ -115,8 +115,9 @@ export default defineConfig({
       ],
 
       '/deploy': [
-        { text: 'Nginx', 
-          items:[
+        {
+          text: 'Nginx',
+          items: [
             { text: '环境准备', link: '/deploy/nginx/env' },
             { text: '配置指令', link: '/deploy/nginx/config' },
             { text: '静态资源', link: '/deploy/nginx/static' },
@@ -127,16 +128,16 @@ export default defineConfig({
             { text: '日志管理', link: '/deploy/nginx/log' },
             { text: '性能优化', link: '/deploy/nginx/optimization' },
           ]
-         },
+        },
         // { text: 'Docker', link: '/deploy/docker' },
       ],
 
-      '/network':[
+      '/network': [
         { text: '子网划分', link: '/network/subnet' },
         { text: '浏览器缓存', link: '/network/cache' },
       ],
 
-      '/other':[
+      '/other': [
         { text: '设计模式', link: '/other/designMode' },
         { text: '软硬连接', link: '/other/link' },
       ]
