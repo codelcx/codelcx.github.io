@@ -18,7 +18,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '基础', link: '/basic/array' },
       { text: '框架', link: '/framework/' },
-      { text: '工程', link: '/project/pkg/npm' },
+      { text: '工程', link: '/project/npm' },
       { text: '服务', link: '/service/node' },
       { text: '部署', link: '/deploy/nginx/env' },
       { text: '网络', link: '/network/subnet' },
@@ -41,30 +41,30 @@ export default defineConfig({
           text: 'Vue',
           items: []
         },
-        {
-          text: 'React',
-          items: []
-        },
+        // {
+        //   text: 'React',
+        //   items: []
+        // },
       ],
 
       '/project/': [
         {
           text: '包管理',
           items: [
-            { text: 'npm', link: '/project/pkg/npm' },
+            { text: 'npm', link: '/project/npm' },
           ]
         },
         {
           text: '版本管理',
           items: [
-            { text: 'Git', link: '/project/ver/git' },
+            { text: 'Git', link: '/project/git' },
           ]
         },
         {
           text: '代码规范',
           items: [
             { text: 'ESLint', link: '/project/eslint/' },
-            { text: 'Prettier', link: '/project/prettier/' },
+            // { text: 'Prettier', link: '/project/prettier/' },
           ]
         },
         {
@@ -79,7 +79,7 @@ export default defineConfig({
           text: '预处理',
           items: [
             // { text: 'Sass', link: '/project/sass/' },
-            { text: 'Typescript', link: '/project/pre/ts' },
+            { text: 'Typescript', link: '/project/ts' },
           ]
         }
       ],
@@ -92,7 +92,7 @@ export default defineConfig({
         { text: '防删水印', 'link': '/case/watermark' },
         { text: '文件上传', 'link': '/case/upload' },
         // { text: '自定义布局', 'link': '/case/customLayout/' },
-        { text: '组件源码展示', 'link': '/case/component/' },
+        // { text: '组件源码展示', 'link': '/case/component/' },
         { text: '自定义脚手架', 'link': '/case/cli/' },
       ],
 
