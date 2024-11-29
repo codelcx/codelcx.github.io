@@ -92,6 +92,50 @@ const { addr='zh' } = person // addr: 'zh'
 
 
 
+## 对象遍历
+
+`for...in`：遍历对象的可枚举属性（Symbol属性默认不可枚举），包括原型链上的属性
+
+`for...of`：遍历的目标必须是可迭代对象，如Array、String、Map、Set，只遍历自身元素
+
+```ts
+// for...in 遍历键
+// for...of 遍历值
+
+const obj1 = { a: 1, [Symbol("b")]: 2 }
+const obj2 = { c: 3, [Symbol("d")]: 4 }
+
+// 设置原型
+Object.setPrototypeOf(obj1, obj2)
+
+// 遍历可枚举属性，包括原型链
+for (let key in obj1) {
+  console.log('key', key) // a  c
+}
+
+// 自身可枚举属性，键值对数组
+for (let [key, value] of Object.entries(obj1)) {
+  console.log('entries', key, value) // a, 1
+}
+
+// 自身可枚举属性名
+for (let key of Object.getOwnPropertyNames(obj1)) {
+  console.log('ownName', key) // a
+}
+
+// 自身符号属性名
+for (let key of Object.getOwnPropertySymbols(obj1)) {
+  console.log('symbolName', key) // Symbol(b)
+}
+
+// 自身所有属性名
+for (let key of Reflect.ownKeys(obj1)) {
+  console.log('ownKeyName', key) // a Symbol(b)
+}
+```
+
+
+
 ## 静态方法
 
 ### Object.is
@@ -100,6 +144,28 @@ const { addr='zh' } = person // addr: 'zh'
 
 ```js
 Object.is(NaN, NaN) // true
+```
+
+
+
+### Object.keys
+
+返回对象自身可枚举属性名组成的数组
+
+```ts
+const obj = { a: 1, [Symbol("b")]: 2 }
+Object.keys(obj) // ['a']
+```
+
+
+
+### Object.entries
+
+返回对象自身可枚举属性组成的键值对数组所组成的数组
+
+```ts
+const obj = { a: 1, [Symbol("b")]: 2 }
+Object.entries(obj) // [['a', 1]]
 ```
 
 
