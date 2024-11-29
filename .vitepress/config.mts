@@ -17,7 +17,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '基础', link: '/basic/array' },
-      { text: '框架', link: '/framework/' },
+      { text: '框架', link: '/framework/vue/component' },
       { text: '工程', link: '/project/npm' },
       { text: '服务', link: '/service/node' },
       { text: '部署', link: '/deploy/nginx/env' },
@@ -39,12 +39,12 @@ export default defineConfig({
       '/framework': [
         {
           text: 'Vue',
-          items: []
+          items: [
+            { text: '认识组件', link: '/framework/vue/component' },
+            { text: '语法入门', link: '/framework/vue/grammar' },
+            { text: '组件通信', link: '/framework/vue/componentSignal.md' },
+          ]
         },
-        // {
-        //   text: 'React',
-        //   items: []
-        // },
       ],
 
       '/project/': [
@@ -70,15 +70,12 @@ export default defineConfig({
         {
           text: '构建工具',
           items: [
-            // { text: 'Babel', link: '/project/babel/' },
             { text: 'Vite', link: '/project/vite/' },
-            // { text: 'Webpack', link: '/project/webpack/' },
           ]
         },
         {
           text: '预处理',
           items: [
-            // { text: 'Sass', link: '/project/sass/' },
             { text: 'Typescript', link: '/project/ts' },
           ]
         }
@@ -91,8 +88,6 @@ export default defineConfig({
         // { text: '虚拟列表', 'link': '/case/virtualList/' },
         { text: '防删水印', 'link': '/case/watermark' },
         { text: '文件上传', 'link': '/case/upload' },
-        // { text: '自定义布局', 'link': '/case/customLayout/' },
-        // { text: '组件源码展示', 'link': '/case/component/' },
         { text: '自定义脚手架', 'link': '/case/cli/' },
       ],
 
