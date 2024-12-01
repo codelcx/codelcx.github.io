@@ -70,7 +70,7 @@ export default defineConfig({
         {
           text: '构建工具',
           items: [
-            { text: 'Vite', link: '/project/vite/' },
+            { text: 'Vite', link: '/project/vite' },
           ]
         },
         {
