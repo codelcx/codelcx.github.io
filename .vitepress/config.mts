@@ -63,7 +63,7 @@ export default defineConfig({
         {
           text: '代码规范',
           items: [
-            { text: 'ESLint', link: '/project/eslint/' },
+            { text: 'ESLint', link: '/project/eslint' },
             // { text: 'Prettier', link: '/project/prettier/' },
           ]
         },
@@ -82,13 +82,13 @@ export default defineConfig({
       ],
 
       '/case/': [
-        { text: '工具函数', link: '/case/tool/' },
+        { text: '工具函数', link: '/case/tool' },
         // { text: '瀑布流', link: '/case/waterfall/' },
         { text: '无缝轮播', 'link': '/case/swiper' },
         // { text: '虚拟列表', 'link': '/case/virtualList/' },
         { text: '防删水印', 'link': '/case/watermark' },
         { text: '文件上传', 'link': '/case/upload' },
-        { text: '自定义脚手架', 'link': '/case/cli/' },
+        { text: '自定义脚手架', 'link': '/case/cli' },
       ],
 
       '/faq/': [
