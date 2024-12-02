@@ -100,6 +100,11 @@ npm install package-name --save-dev # -D
 npm install --production # 仅安装dependencies字段
 ```
 
+```shell
+# 证书过期 error (CERT_HAS_EXPIRED)
+npm install npm@latest -g
+```
+
 修改下载镜像源，默认下载地址在国外
 
 ```bash
@@ -345,11 +350,28 @@ npm publish --timing
 
 ## 命令工具(NPX)
 
+npx的运行规则同npm：本地 node_modules/.bn -> 全局 node_modules -> 下载后执行->删除
+
 **NPX安装**
 
 ```bash
 npm install npx -g
 ```
+
+**NPX参数**
+
+```shell
+# --no-install 不下载，本地不存在该模块则无法执行
+npx --no-install vite@last my-vue-app
+
+# --ignore-existing  忽略本地模块，每次都下载包并执行
+npx --ignore-existing vite@last my-vue-app
+
+# -p 指定安装的模块，可以多次使用指定多个模块，默认是安装最新版本，该参数可以指定版本
+npx -p axios -p vue-router -p vite@5.4.10
+```
+
+
 
 **NPX优势**
 
