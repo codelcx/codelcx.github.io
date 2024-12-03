@@ -23,7 +23,7 @@ export default defineConfig({
       { text: '部署', link: '/deploy/nginx/env' },
       { text: '网络', link: '/network/subnet' },
       { text: '案例', link: '/case/tool' },
-      { text: '试题', link: '/faq/' },
+      // { text: '试题', link: '/faq/' },
       { text: '其他', link: '/other/designMode' },
     ],
 
@@ -64,7 +64,6 @@ export default defineConfig({
           text: '代码规范',
           items: [
             { text: 'ESLint', link: '/project/eslint' },
-            // { text: 'Prettier', link: '/project/prettier/' },
           ]
         },
         {
@@ -88,6 +87,7 @@ export default defineConfig({
         // { text: '虚拟列表', 'link': '/case/virtualList/' },
         { text: '防删水印', 'link': '/case/watermark' },
         { text: '文件上传', 'link': '/case/upload' },
+        { text: '开发规范', link: '/case/standard' },
         { text: '自定义脚手架', 'link': '/case/cli' },
       ],
 
