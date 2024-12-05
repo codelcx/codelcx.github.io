@@ -88,6 +88,7 @@ export default defineConfig({
         { text: '防删水印', 'link': '/case/watermark' },
         { text: '文件上传', 'link': '/case/upload' },
         { text: '开发规范', link: '/case/standard' },
+        { text: '版本检测', link: '/case/version' },
         { text: '自定义脚手架', 'link': '/case/cli' },
       ],
 
