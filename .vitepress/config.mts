@@ -45,6 +45,12 @@ export default defineConfig({
             { text: '组件通信', link: '/framework/vue/componentSignal.md' },
           ]
         },
+        {
+          text: 'Vue Core',
+          items: [
+            { text: '开始准备', link: '/framework/vuecore/prepare' },
+          ]
+        },
       ],
 
       '/project/': [

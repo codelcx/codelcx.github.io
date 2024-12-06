@@ -32,7 +32,7 @@ SFC是Single File Component的缩写，译为单文件组件。在Vue.js中，SF
 ```
 父beforeCreate------>父created------>父beforeMount------>
 子beforeCreate------>子created------>子beforeMount------>
-子Mounted------>父Mounted`
+子Mounted------>父Mounted
 ```
 
 
@@ -40,7 +40,7 @@ SFC是Single File Component的缩写，译为单文件组件。在Vue.js中，SF
 **更新阶段**
 
 ```
-父beforeUpdate------>子beforeUpate------>子updated------>父updated
+父beforeUpdate------>子beforeUpdate------>子updated------>父updated
 ```
 
 
