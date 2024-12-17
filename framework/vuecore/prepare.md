@@ -1,4 +1,4 @@
-# 开始准备
+# 前期准备
 
 Vue三大核心系统：Compiler、Runtime、Reactivity 
 

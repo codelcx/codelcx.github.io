@@ -48,7 +48,8 @@ export default defineConfig({
         {
           text: 'Vue Core',
           items: [
-            { text: '开始准备', link: '/framework/vuecore/prepare' },
+            { text: '前期准备', link: '/framework/vuecore/prepare' },
+            { text: '响应式原理', link: '/framework/vuecore/reactivity' },
           ]
         },
       ],
