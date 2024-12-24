@@ -144,6 +144,7 @@ export default defineConfig({
       '/other': [
         { text: '设计模式', link: '/other/designMode' },
         { text: '软硬连接', link: '/other/link' },
+        { text: '数字证书', link: '/other/ca' },
       ]
     },
 
