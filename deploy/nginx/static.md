@@ -16,7 +16,7 @@ http {
 	gzip_types application/javascript text/plain; # 压缩的MIME类型，可设置多个
 	gzip_comp_level 1; # 压缩等级1-9，等级越高效率越低
 	gzip_vary off; # 是否告知客户端启用gzip，响应头：Vary：Accept-Encoding
-	gzip_diable "MSIE [1-6]"; # 根据use-agent值关闭gzip功能
+	gzip_disable "MSIE [1-6]"; # 根据use-agent值关闭gzip功能
 	gzip_http_version 1.1 # 启用gzip的最低http版本
   gzip_min_length 1k; # Content-length值大于该值时才压缩
 }
@@ -38,7 +38,9 @@ gzip_proxid off|expired|noc-cache|...
 # any：无条件压缩
 ```
 
- **http_gzip_static_module：** nginx默认不包括该模块，需要添加，主要作用：gzip和sendfile共存问题
+ **http_gzip_static_module：** 非内置模块，需要添加
+
+主要作用：gzip和sendfile共存问题
 
 访问资源之前将资源进行压缩为 `同名.gz`,服务器返回时会寻找 `同名.gz`
 
@@ -174,7 +176,9 @@ location / {
 }
 ```
 
-**rewrite_log：** 将重写信息写入错误日志文件中，开启后将会以notice级别写入error_log指令配置的日志文件中
+**rewrite_log：** 将重写信息写入错误日志文件中
+
+开启后将会以notice级别写入error_log指令配置的日志文件中
 
 ```shell
 rewrite_log on; 

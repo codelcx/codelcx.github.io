@@ -133,7 +133,14 @@ export default defineConfig({
             { text: '性能优化', link: '/deploy/nginx/optimization' },
           ]
         },
-        // { text: 'Docker', link: '/deploy/docker' },
+
+        {
+          text: 'CI/CD',
+          items: [
+            { text: '基本概念', link: '/deploy/cicd/concept' },
+            { text: '基本配置', link: '/deploy/cicd/setting' },
+          ]
+        }
       ],
 
       '/network': [
