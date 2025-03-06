@@ -23,7 +23,7 @@ export default defineConfig({
       { text: '部署', link: '/deploy/nginx/env' },
       { text: '网络', link: '/network/subnet' },
       { text: '案例', link: '/case/tool' },
-      // { text: '试题', link: '/faq/' },
+      { text: '面试题', link: '/faq/script' },
       { text: '其他', link: '/other/designMode' },
     ],
 
@@ -100,11 +100,6 @@ export default defineConfig({
         { text: '自定义脚手架', 'link': '/case/cli' },
       ],
 
-      '/faq/': [
-        { text: 'Vue', link: '/faq/vue' },
-        { text: 'Javascript', link: '/faq/js' },
-      ],
-
       '/service': [
         {
           text: 'Node',
@@ -152,6 +147,15 @@ export default defineConfig({
         { text: '设计模式', link: '/other/designMode' },
         { text: '软硬连接', link: '/other/link' },
         { text: '数字证书', link: '/other/ca' },
+      ],
+
+      '/faq':[
+        { text: '前端脚本', link: '/faq/script' },
+        { text: '前端样式', link: '/faq/style' },
+        { text: '前端框架', link: '/faq/vue' },
+        { text: '前端工程', link: '/faq/build' },
+        { text: '前端场景', link: '/faq/scene' },
+        { text: '网络协议', link: '/faq/http' },
       ]
     },
 
